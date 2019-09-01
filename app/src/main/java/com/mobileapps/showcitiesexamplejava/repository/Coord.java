@@ -2,28 +2,28 @@ package com.mobileapps.showcitiesexamplejava.repository;
 
 public class Coord
 {
-    private float lon;
-    private float lat;
+    private double lon;
+    private double lat;
 
 
-    public Coord(float lon, float lat) {
+    public Coord(double lon, double lat) {
         this.lon = lon;
         this.lat = lat;
     }
 
-    public float getLon() {
+    public double getLon() {
         return lon;
     }
 
-    public void setLon(float lon) {
+    public void setLon(double lon) {
         this.lon = lon;
     }
 
-    public float getLat() {
+    public double getLat() {
         return lat;
     }
 
-    public void setLat(float lat) {
+    public void setLat(double lat) {
         this.lat = lat;
     }
 }

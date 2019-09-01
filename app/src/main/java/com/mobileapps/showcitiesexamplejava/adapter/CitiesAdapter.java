@@ -1,5 +1,6 @@
 package com.mobileapps.showcitiesexamplejava.adapter;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ public class CitiesAdapter extends RecyclerView.Adapter<CitiesAdapter.ViewHolder
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_city,parent);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_city,parent,false);
         return new ViewHolder(view);
     }
 
@@ -33,8 +34,8 @@ public class CitiesAdapter extends RecyclerView.Adapter<CitiesAdapter.ViewHolder
         City city = cities.get(position);
         holder.tvCityName.setText(city.getName());
         holder.tvCountryName.setText(city.getCountry());
-        holder.tvLat.setText(String.valueOf(city.getCoord().getLat()));
-        holder.tvLong.setText(String.valueOf(city.getCoord().getLon()));
+        holder.tvLat.setText(String.valueOf(city.getLat()));
+        holder.tvLong.setText(String.valueOf(city.getLng()));
     }
 
     @Override

@@ -4,14 +4,30 @@ public class City
 {
     private String country;
     private String name;
-    private Long   _id;
-    private Coord  coord;
+    private String lat;
+    private String lng;
 
-    public City(String country, String name, Long _id, Coord coord) {
+    public City(String country, String name, String lat, String lng) {
         this.country = country;
         this.name = name;
-        this._id = _id;
-        this.coord = coord;
+        this.lat = lat;
+        this.lng = lng;
+    }
+
+    public String getLat() {
+        return lat;
+    }
+
+    public void setLat(String lat) {
+        this.lat = lat;
+    }
+
+    public String getLng() {
+        return lng;
+    }
+
+    public void setLng(String lng) {
+        this.lng = lng;
     }
 
     public String getName() {
@@ -30,20 +46,8 @@ public class City
         this.country = country;
     }
 
-    public Long get_id() {
-        return _id;
-    }
 
-    public void set_id(Long _id) {
-        this._id = _id;
-    }
 
-    public Coord getCoord() {
-        return coord;
-    }
 
-    public void setCoord(Coord coord) {
-        this.coord = coord;
-    }
 }
 

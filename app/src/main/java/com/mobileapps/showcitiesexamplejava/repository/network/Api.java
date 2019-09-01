@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 
 public interface Api
 {
-    public String BASE_URL = "https://raw.githubusercontent.com/lutangar/cities.json/master/";
+     String BASE_URL = "https://raw.githubusercontent.com/lutangar/cities.json/master/";
 
     @GET("cities.json")
     Call<List<City>> getCities();
