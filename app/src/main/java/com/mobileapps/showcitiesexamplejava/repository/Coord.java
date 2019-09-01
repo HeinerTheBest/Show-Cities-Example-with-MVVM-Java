@@ -1,4 +1,4 @@
-package com.mobileapps.showcitiesexamplejava.Model;
+package com.mobileapps.showcitiesexamplejava.repository;
 
 public class Coord
 {
