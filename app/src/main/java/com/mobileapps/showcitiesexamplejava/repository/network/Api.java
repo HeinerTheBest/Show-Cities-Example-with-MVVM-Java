@@ -7,7 +7,7 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface api
+public interface Api
 {
     public String BASE_URL = "https://raw.githubusercontent.com/lutangar/cities.json/master/";
 
